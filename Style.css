@@ -119,3 +119,17 @@
 .ctrAgricolo:hover::after {
 	width: 100%;
 }
+.btn{
+	width:10%;
+	height:5vh;
+	border-left-style:none;
+	border-right-style:none;
+	border-top-style:none;
+	color:var(--col3);
+	background-color:var(--col4);
+}
+.btn:hover{
+	color:var(--col3);
+	background-color:var(--col5);
+	outline:none;
+}
