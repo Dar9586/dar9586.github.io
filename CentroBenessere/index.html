@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Centro Benessere Majorana</title>
+	<meta charset="utf-8"/>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link href="./Stili/Style.css" type="text/css" rel="stylesheet" />
+</head>
+<body class="mainBody" onresize="iframeLoaded()">
+ <script type="text/javascript" src="./Script/Script.js"></script> 
+		<p><img class="homeImage"  onclick="document.getElementById('fram').src='./Pagine/Home.html';" src="./Risorse/Immagini/Loghi/Logo_Finale.png" alt="Torna alla home">
+		<button class="generalButton" onclick="document.getElementById('fram').src='./Pagine/Contatti.html';" >Contatti</button>
+		<button class="generalButton" onclick="document.getElementById('fram').src='./Pagine/Dove_Siamo.html';" >Dove siamo</button>
+		<button class="generalButton" onclick="document.getElementById('fram').src='./Pagine/Palestra.html';" >Palestra</button>
+		<button class="generalButton" onclick="document.getElementById('fram').src='./Pagine/Altro.html';" >Altro</button>
+		</p>
+		<p>
+		<iframe class="generalIFrame" id="fram" onload="iframeLoaded();" src="./Pagine/Home.html"/>
+		</p>
+
+</body>
+</html>
+
+
+

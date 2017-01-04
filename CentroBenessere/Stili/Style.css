@@ -1,0 +1,152 @@
+html {
+    height: 98%;
+}
+body{
+	background: rgba(0,0,0,0);
+}
+.mainBody {
+	background: #baffed !important;
+	background: linear-gradient(45deg, #d8fff4 0%,#e4d8ff 50%,#ffd8da 100%)!important;
+	height: 98%;
+    background-repeat: no-repeat;
+}
+iframe{
+	overflow-y: hidden;
+	height:1000px;
+	background: rgba(0,0,0,0);
+	bottom:0px;
+}
+.mapstyle{
+	width: 100%;
+    height: 600px;
+}
+.generalButton {
+	cursor: pointer;
+	border: 2px solid rgb(87,0,127);
+	width: 15%;
+	height: 70px;
+	margin-top: 3%;
+	margin-bottom: 20px;
+	margin-left: 2%;
+	border-radius: 40px;
+	font: normal 2vw "Advent Pro", Helvetica, sans-serif;
+	color: rgb(178,0,255);
+	letter-spacing: 1px;
+	outline-style: none;
+	background: rgba(255,255,255,0);
+	transition: background-color 0.5s , color 1.5s, border-color 0.5s;
+}
+.generalButton:hover {
+	color: rgb(255,255,255);
+	background: rgb(178,0,255);
+	outline-style: none;
+}
+.generalButton:active {
+	border: 2px solid rgb(255,255,255);
+	background: rgba(255,255,255,0);
+	transition: none;
+}
+.prenotationButton {
+	width: 25%;
+	text-align: center;
+}
+.homeImage{
+	cursor: pointer;
+	width: 25%;
+	min-height:95px;
+    height: 10%;
+	margin-top: 5px;
+	vertical-align: top;
+}
+.noselectable{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.logoImage{
+	border-radius: 200px;
+	cursor: pointer;
+	margin-left: 3vw;
+	vertical-align: top;
+	width:25%;
+	height:10vw;
+	border: 2px solid rgb(87,0,127); 
+}
+.telephoneButton{
+	width:25%;
+	height:10vw;
+	background: rgba(0,0,0,0);
+	border: 2px solid rgb(87,0,127);
+	margin-left: 3vw;
+	border-radius: 200px;
+	text-align: center;
+	font: normal 2.5vw "Advent Pro", Helvetica, sans-serif;
+}
+.mailButton{
+	width:25%;
+	background: rgba(0,0,0,0);
+	height:10vw;
+	border: 2px solid rgb(87,0,127);
+	margin-left: 3vw;
+	border-radius: 200px;
+	text-align: center;
+	font: normal 1.75vw "Advent Pro", Helvetica, sans-serif;
+}
+.addressButton{
+	width:50vw;
+	background: rgba(0,0,0,0);
+	height:auto;
+	border: 2px solid rgb(87,0,127);
+	margin-left: 3vw;
+	border-radius: 200px;
+	text-align: center;
+	font: normal 2vw "Advent Pro", Helvetica, sans-serif;
+}
+.largeImage1{
+	width:100%;
+	height:10.7%;
+	margin-bottom:1%;
+	
+}
+.largeImage2{
+	width:100%;
+	height:19.42%;
+	margin-bottom:1%;
+}
+.normalImage{
+	width:29.24%;
+	height:auto;
+	margin-right:2.5%;
+	margin-bottom:1%;
+}
+.generalIFrame{
+	width: 100%;
+	bottom: 0px;
+	border-style:none;
+}
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	filter:blur(20px);
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.8);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+.overlay-content {
+	filter:none;
+	z-index: 2;
+	position: absolute;
+	width: 0%;
+	transition: 0.5s;
+	text-align: center;
+}
+.imgCont{
+	width: 90%;
+	height: auto;
+}
