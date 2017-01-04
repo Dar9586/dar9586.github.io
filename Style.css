@@ -85,3 +85,37 @@
 	background: rgba(255,255,255,0);
 	transition: none;
 }
+.ctrAgricolo {
+	padding: 1em 1.5em;
+	background: none;
+	color:darkblue;
+	width:15%;
+	font-weight: bold;
+	position: relative;
+	transition:color 0.25s,width 0.5s;
+	border:3px solid white;
+}
+.ctrAgricolo:hover {
+	color:red;
+}
+.ctrAgricolo:focus{
+	outline:none;
+}
+.ctrAgricolo:active{
+	color:yellow;
+}
+.ctrAgricolo::after {
+	position: absolute;
+	content: '';
+	top:0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #EAE4C2;
+	transform-origin:left;
+	transition:width 0.5s;
+	z-index:-1;
+}
+.ctrAgricolo:hover::after {
+	width: 100%;
+}

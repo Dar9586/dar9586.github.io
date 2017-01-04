@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Altro</title>
+	<meta charset="utf-8"/>
+	<link href="../Stili/Style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<img class="imgFxd" />
+	<script type="text/javascript" src="./Script/Script.js"></script> 
+	<img src="../Risorse/Immagini/Loghi/Scritta.png" class="logoWrt noselectable">
+	<img onclick="modNav();" src="../Risorse/Immagini/Loghi/Logo.png" id="logoImg" class="logoBtn noselectable"/>
+	<div onclick="modNav();" id="myNav" class="divv">
+		<a href="../index.html"><input class="btn" type="button" value="Home" /></a>
+		<a href="../Pagine/Prodotti.html"><input class="btn" type="button" value="Prodotti" /></a>
+		<a href="../Pagine/Contatti.html"><input class="btn" type="button" value="Contatti" /></a>
+		<a href="../Pagine/Galleria.html"><input class="btn" type="button" value="Galleria" /></a>
+		<a href="http://www.facebook.com/"><input class="fb smallbtn btn" type="button"  /></a>
+		<a href="http://www.twitter.com/"><input class="tw smallbtn btn" type="button" /></a>
+		<a href="http://www.instagram.com/"><input class="ig smallbtn btn" type="button" /></a>
+	</div>
+<img class="imgFxd" />
+<script type="text/javascript" src="../Script/Script.js"></script> 
+<div style="margin-top:155px;">
+	<p><h1>Tipo<select id="mySelect2" onchange="changedSelect();" class="prenotationButton">
+	<option selected>Prenotazione</option>
+	<option>Registrazione</option>
+	</select></h1></p>
+	<p><h1>Nome<input class="prenotationButton" onchange="prenotationMail();" id="st1" type="name"/></h1></p>
+	<p hidden><h1 id="ccc1">Dal<input class="prenotationButton" onchange="prenotationMail();" id="st2" type="date"/></h1></p>
+	<p hidden><h1 id="ccc2">Al <input class="prenotationButton" onchange="prenotationMail();" id="st3" type="date"/></h1></p>
+	<p><h1>Email<input class="prenotationButton emailInput" onchange="prenotationMail();" id="st4" type="email"/></h1></p>
+	<p><h1>Tipo<select id="mySelect" class="prenotationButton">
+	<option id="sl1" selected>Camera Singola</option>
+	<option id="sl2">Camera Doppia</option>
+	<option id="sl3">Suite</option>
+	<option id="sl4">Suite di lusso</option>
+	</select></h1></p>
+	<p><a id="bt1" href="../Risorse/Documenti/Prenotazione.docx"><button class="prenotationButton">Invia</button></a></p>
+	</div>
+</body>
+</html>

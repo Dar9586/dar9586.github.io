@@ -1,0 +1,266 @@
+html {
+    height: 98%;
+}
+.logoBtn{
+	display:block;
+	border-radius: 50%;
+	border: 1px solid red;
+	transition:transform 1s,filter .25s;
+	height: 150px;
+	width: 150px;
+	background:#EAE4C2;
+	z-index:2;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.logoBtn:hover{
+	transform: rotate(360deg);
+}
+.logoBtn:active{
+	filter:saturate(8);
+}
+.divv{
+	background:rgba(255,255,255,0.3);
+	height: auto;
+	width: 0px;
+	max-width: 420px;
+	position:fixed;
+	visibility:hidden;
+	z-index:2;
+	transition:color 0.25s,width 0.5s;
+}
+.imgFxd{
+	height:100%;
+	width:100%;
+	background: linear-gradient(135deg, #a1f4d6 0%,#aec6a3 50%,#918477 99%);
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:-1;
+}
+.noselectable{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	filter:blur(20px);
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.8);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+.smallbtn{
+	border-radius:10px;
+	margin-left:px;
+	margin-right:-4px;
+	height:50px!important;
+	width:50px!important;
+	border:none!important;
+}
+.smallbtn:hover{
+	filter:brightness(150%);
+}
+.btn {
+	padding: 1em 1.5em;
+	background: rgba(255,255,255,0.6);
+	color:darkblue;
+	width:100%;
+	font-weight: bold;
+	position: relative;
+	transition:color 0.25s,width 0.5s,filter 0.5s;
+	border:3px solid white;
+}
+.fb{
+	background-color:rgba(59,89,152,0.7);
+	background-image: url("../Risorse/Immagini/Loghi/fbLogo.png");
+}
+.tw{
+	background-color:rgba(45,170,225,0.7);
+	background-image: url("../Risorse/Immagini/Loghi/twLogo.png");
+}
+.ig{
+	background-color:rgba(255,255,255,0.7);
+	background-image: url("../Risorse/Immagini/Loghi/igLogo.png");
+}
+.addressButton{
+	height:auto;
+	width:98%;
+	top:165px;
+	position:absolute;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 2em;
+	background-color: rgba(255,255,255,0.5);
+}
+.largeImage1{
+	width:100%;
+	height:10.7%;
+	margin-bottom:1%;
+	
+}
+
+.largeImage2{
+	margin-top:155px;
+	width:100%;
+	height:19.42%;
+	margin-bottom:1%;
+}
+.normalImage{
+	width:29.24%;
+	height:auto;
+	margin-right:2.5%;
+	margin-bottom:1%;
+}
+.overlay {
+	height: 100px;
+	width: 0%;
+	position: fixed;
+	z-index: 1;
+	filter:blur(20px);
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.8);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+.overlay-content {
+	height: 100px;
+	filter:none;
+	z-index: 2;
+	position: absolute;
+	width: 0%;
+	transition: 0.5s;
+	text-align: center;
+}
+.imgCont{
+	left:5px;
+	width: 90%;
+	height: auto;
+	position:absolute;
+}
+.logoWrt{
+	left:160px;
+	top:0px;
+	height:150px;
+	width:auto;
+	position:absolute;
+    text-align:center;
+}
+.mapstyle{
+	top:200px;
+	width: 100%;
+    height: 600px;
+}
+.btn:hover {
+	color:red;
+}
+.btn:focus{
+	outline:none;
+}
+.btn:active{
+	color:yellow;
+}
+.test{
+	width:100%;
+	height:150px;
+	margin-bottom:10px;
+	position:relative;
+	border: 3px solid #000000;
+	background: linear-gradient(135deg, rgb(197,247,71) 0%,rgb(146,232,66) 1%,rgb(252,255,84) 100%); 
+}
+.imageDiv{
+	margin-top:5px;
+	margin-left:5px;
+	width:auto;
+	height:140px;
+}
+.h1Div{
+	position:relative;
+	left:220px;
+	top:-160px;
+}
+.textareaDiv{
+	position:absolute;
+	width:70%;
+	height:100px;
+	position:relative;
+	right:-220px;
+	background-color:rgba(0,0,0,0);
+	top:-188px;
+	border: none;
+	resize: none;
+	outline:none;
+}
+.inputDiv{
+	position:absolute;
+	right:5px;
+	top:5px;
+	text-align:center;
+	height:140px;
+	width:140px;
+	z-index:2;
+	outline:none;
+	font-size: 2em;
+	border-radius:50%;
+	display:block;
+	background-color:#19e87d;
+	color:#ffffff;
+	border: 3px solid #00C110;
+	transition:background-color 0.5s,filter 0.25s;
+}
+.inputDiv:hover{
+	background-color:#83F3B9;
+}
+.inputDiv:active{
+	background-color:#ffffff;
+}
+.proCont{
+	width:100%;
+	height:100%;
+	margin-top:155px;
+}
+.prenotationButton {
+	border: 2px solid darkblue;
+	text-align: center;
+	width: 25%;
+	height: 70px;
+	z-index:5;
+	margin-top: 1%;
+	margin-bottom: 20px;
+	margin-left: 2%;
+	font: normal 2vw "Advent Pro", Helvetica, sans-serif;
+	color: darkblue;
+	letter-spacing: 1px;
+	outline-style: none;
+	background: rgba(255,255,255,0);
+	transition: background-color 0.5s , color 1.5s, border-color 0.5s;
+
+}
+.prenotationButton:hover {
+	color: rgb(255,255,255);
+	background: darkblue;
+	outline-style: none;
+}
+.emailInput:valid {
+	color: rgb(255,255,255);
+	background: rgba(0,255,0,0.2);
+	outline-style: none;
+}
+.emailInput:invalid {
+	color: rgb(255,255,255);
+	background: rgba(255,0,0,0.2);
+	outline-style: none;
+}
+.farmBtn{
+	margin-top:155px;
+	
+	
+}
