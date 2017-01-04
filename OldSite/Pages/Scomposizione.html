@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Scomposizione</title>
+</head>
+<body bgcolor='black'>
+  <link rel="stylesheet" href="../Styles/General.css">
+  <input id="num" class="GeneralInput" type="number" min="2" value="2" oninput="textCng()" />
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <script type="text/javascript">
+  function textCng() {
+  document.getElementById("demo1").innerHTML = parseInt(document.getElementById("num").value);
+  var num = parseInt(document.getElementById("num").value);
+  if (num.toString() != "NaN" && num > 0) {scom(num);}
+}
+
+function scom(num) {
+document.getElementById("demo").innerHTML = "";
+  var s = num.toString().length;
+  var list = new Array();
+  var nn = 2;
+  while (num != 1) {
+  while (num % nn != 0) {nn++;}
+    list.push(nn);
+    var spaces="";
+    for (a = 0; a < (s - num.toString().length); a++) {spaces += " ";}
+    document.getElementById("demo").innerHTML += "<font color='cyan'>" + spaces + num.toString() + "</font><font color='white'>  |  </font><font color='red'>" + nn.toString() + "<br></font>"
+    num =num / nn;
+  }
+  for (a = 0; a < s - num.toString().length; a++) {
+    document.getElementById("demo").innerHTML += "  ";
+  }
+  document.getElementById("demo").innerHTML += "<font color='cyan'>1</font><font color='white'>  |  </font><font color='red'>1\n</font>"
+  var fin1 = new Array();
+  var fin2 = new Array();
+  for (a = 0; a < list.length; a++) {if (fin1.indexOf(list[a]) == -1) {fin1.push(list[a]);}}
+  for (a = 0; a < fin1.length; a++) {fin2.push(0);}
+  for (a = 0; a < list.length; a++) {fin2[fin1.indexOf(list[a])]++;}
+  var lll="";
+  for (a = 0; a < fin1.length; a++) {
+    if (fin2[a] != 1) {lll+= fin1[a] + " ^ " + fin2[a] + " * ";} 
+    else {lll+= fin1[a] + " * ";}
+  }document.getElementById("demo1").innerHTML = "<font color='cyan'>"+document.getElementById("num").value+" = "+lll.substring(0,lll.length-3)+"</font>";
+}
+
+  </script>
+</body>
+</html>

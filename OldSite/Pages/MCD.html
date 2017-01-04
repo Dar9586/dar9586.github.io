@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<body bgcolor="black">
+    <link rel="stylesheet" href="../Styles/General.css">
+    <p><input type="number" class="GeneralInput" id="n1" value="2" min="2"/></p>
+    <p><input type="number" class="GeneralInput" id="n2" value="2" min="2"/></p>
+    <p><button  class="GeneralButton" onclick="clickq()">Calcola</button></p>
+    <p id="mcd"></p>
+    <p id="mcm"></p>
+    <script type="text/javascript">
+        function clickq() {
+                var n1 = parseInt(document.getElementById('n1').value);
+                var n2 = parseInt(document.getElementById('n2').value);
+                if (n1.toString() != "NaN" && n2.toString() != "NaN") {
+                    if (n1 != 0 && n2 != 0) {
+                        var n3 = n1 < n2 ? n1 : n2;
+                        while (n1 % n3 != 0 || n2 % n3 != 0) { n3--; }
+                        document.getElementById('mcd').innerHTML = "<font color='white'>MCD:</font><font color='cyan'> " + n3+"</font>";
+                        n3 = n1 > n2 ? n1 : n2;
+                        while (n3 % n1 != 0 || n3 % n2 != 0) { n3++; }
+                        document.getElementById('mcm').innerHTML = "<font color='white'>mcm:</font><font color='cyan'> " + n3 + "</font>";
+                    } else { document.getElementById('mcd').innerHTML = "<font color='white'>MCD:</font><font color='cyan'> numeri invalidi</font>";
+                        document.getElementById('mcm').innerHTML ="<font color='white'>mcm:</font><font color='cyan'> numeri invalidi</font>";}
+                } else { document.getElementById('mcd').innerHTML ="<font color='white'>MCD:</font><font color='cyan'> numeri invalidi</font>";
+                    document.getElementById('mcm').innerHTML ="<font color='white'>mcm:</font><font color='cyan'> numeri invalidi</font>";}
+        }
+
+    </script>
+</body>
